@@ -1,0 +1,77 @@
+2021-06-19 18:35:13,384 INFO o.s.t.c.s.AbstractTestContextBootstrapper [main] Using TestExecutionListeners: [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4b013c76, org.springframework.test.context.support.DirtiesContextTestExecutionListener@53fb3dab]
+2021-06-19 18:35:14,337 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-19 18:35:14,351 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 5ms. Found 0 JPA repository interfaces.
+2021-06-19 18:35:14,814 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-06-19 18:35:14,825 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-06-19 18:35:14,834 INFO o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor [main] No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-06-19 18:35:15,054 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$c301b6c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-19 18:35:15,277 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-19 18:35:15,312 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-19 18:35:15,318 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-19 18:35:15,863 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2021-06-19 18:35:16,104 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-06-19 18:35:16,224 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-19 18:35:16,328 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.4.20.Final
+2021-06-19 18:35:16,548 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-06-19 18:35:16,715 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-06-19 18:35:16,951 INFO o.h.v.i.u.Version [main] HV000001: Hibernate Validator 6.1.5.Final
+2021-06-19 18:35:17,150 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-19 18:35:17,159 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-19 18:35:17,549 INFO o.s.s.c.ExecutorConfigurationSupport [main] Initializing ExecutorService
+2021-06-19 18:35:17,573 INFO o.s.s.c.ExecutorConfigurationSupport [main] Initializing ExecutorService 'europeanGatewayJobExecutor'
+2021-06-19 18:35:17,749 DEBUG c.t.e.c.BatchConfiguration [main] Generating PIRemoverItemProcessor
+2021-06-19 18:35:17,759 DEBUG c.t.e.c.BatchConfiguration [main] Generating EdsClientItemWriter
+2021-06-19 18:35:18,991 WARN o.s.b.a.b.JpaBatchConfigurer [main] JPA does not support custom isolation levels, so locks may not be taken when launching Jobs
+2021-06-19 18:35:18,995 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: H2
+2021-06-19 18:35:19,022 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2021-06-19 18:35:19,314 INFO o.s.s.c.ExecutorConfigurationSupport [main] Initializing ExecutorService 'taskScheduler'
+2021-06-19 18:35:19,490 INFO o.s.i.e.EventDrivenConsumer [main] Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-06-19 18:35:19,490 INFO o.s.i.c.AbstractSubscribableChannel [main] Channel 'org.springframework.context.support.GenericApplicationContext@93081b6.errorChannel' has 1 subscriber(s).
+2021-06-19 18:35:19,491 INFO o.s.i.e.AbstractEndpoint [main] started bean '_org.springframework.integration.errorLogger'
+2021-06-19 18:35:19,736 INFO o.s.b.c.l.s.SimpleJobLauncher$1 [main] Job: [SimpleJob: [name=extractAndReplacePersonalDataJob]] launched with the following parameters: [{submission.account=12345, currentTime=1624107919514, file.path=D:\sameer\git\spring-batch-xml-to-xml\batchxml\src\test\resources\data\PRO_222100GH7XKDGO3GLZ60_20201231T090534024_GBXXXXXXT.XML}]
+2021-06-19 18:35:19,776 INFO c.t.e.l.JobResultListener [main] Starting extractPersonalData Job for submission acount 12345
+2021-06-19 18:35:19,777 INFO c.t.e.l.JobResultListener [main] Job instance details: JobInstance: id=1, version=0, Job=[extractAndReplacePersonalDataJob]
+2021-06-19 18:35:19,854 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [extractHeaderStep]
+2021-06-19 18:35:19,894 DEBUG c.t.e.s.ExtractHeaderOmegaXml [main] Could not find FileInformation header tag
+2021-06-19 18:35:19,909 INFO o.s.b.c.s.AbstractStep [main] Step: [extractHeaderStep] executed in 54ms
+2021-06-19 18:35:20,252 WARN o.s.b.c.l.AbstractListenerFactoryBean [main] org.springframework.batch.item.ItemStreamReader is an interface. The implementing class will not be queried for annotation based listener configurations. If using @StepScope on a @Bean method, be sure to return the implementing class so listener annotations can be used.
+2021-06-19 18:35:20,280 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [extractAndReplacePersonalDataStep]
+2021-06-19 18:35:20,284 DEBUG c.t.e.l.StepResultListener [main] StepResultListener called beforeStep for submitter 12345
+2021-06-19 18:35:20,297 DEBUG c.t.e.c.BatchConfiguration [main] Generating StaxEventItemReader
+2021-06-19 18:35:20,333 DEBUG c.t.e.c.BatchConfiguration [main] Generating CompositeItemWriter
+2021-06-19 18:35:20,351 DEBUG c.t.e.c.BatchConfiguration [main] Generating OmegaXmlFileWriter
+2021-06-19 18:35:20,368 DEBUG c.t.e.u.FileUtils [main] Call to create directory /xbus/europeangateway/outbound
+2021-06-19 18:35:20,371 DEBUG c.t.e.u.FileUtils [main] Directory /xbus/europeangateway/outbound already exists. No need to create.
+2021-06-19 18:35:20,372 DEBUG c.t.e.u.FileUtils [main] Call to create directory /xbus/europeangateway/outbound/testOut
+2021-06-19 18:35:20,374 DEBUG c.t.e.u.FileUtils [main] Directory /xbus/europeangateway/outbound/testOut already exists. No need to create.
+2021-06-19 18:35:20,987 DEBUG c.t.e.c.BatchConfiguration [main] Generating CompositeItemProcessor
+2021-06-19 18:35:20,998 DEBUG c.t.e.c.BatchConfiguration [main] Generating PIExtractorItemProcessor
+2021-06-19 18:35:21,013 INFO c.t.e.i.o.PIExtractorItemProcessor [main] Extracting personal data for transaction customer id 01 and create EDS requestDto.
+2021-06-19 18:35:21,014 INFO c.t.e.s.PersonalDataExtractor [main] PersonalDataExtractor:Creating Eds request dto for customer transaction id 01
+2021-06-19 18:35:21,017 INFO c.t.e.i.o.PIRemoverItemProcessor [main] Removing personal data for transaction customer id 01 and create EDS requestDto.
+2021-06-19 18:35:21,018 INFO c.t.e.s.PersonalDataRemover [main] PersonalDataRemover:remove personal data for customer transaction id 01
+2021-06-19 18:35:21,021 INFO c.t.e.i.o.PIExtractorItemProcessor [main] Extracting personal data for transaction customer id 02 and create EDS requestDto.
+2021-06-19 18:35:21,022 INFO c.t.e.s.PersonalDataExtractor [main] PersonalDataExtractor:Creating Eds request dto for customer transaction id 02
+2021-06-19 18:35:21,023 INFO c.t.e.i.o.PIRemoverItemProcessor [main] Removing personal data for transaction customer id 02 and create EDS requestDto.
+2021-06-19 18:35:21,024 INFO c.t.e.s.PersonalDataRemover [main] PersonalDataRemover:remove personal data for customer transaction id 02
+2021-06-19 18:35:21,025 INFO c.t.e.i.o.OmegaXmlFileWriter [main] Item Writer for generating de-enriched file.
+2021-06-19 18:35:21,026 INFO c.t.e.i.o.OmegaXmlFileWriter [main] Delegating the write operation to StaxEventItemWriter
+2021-06-19 18:35:21,089 DEBUG c.t.e.l.StepResultListener [main] StepResultListener called afterStep for submitter 12345
+2021-06-19 18:35:21,092 INFO o.s.b.c.s.AbstractStep [main] Step: [extractAndReplacePersonalDataStep] executed in 811ms
+2021-06-19 18:35:21,098 ERROR c.t.e.i.o.OmegaXmlFooterCallBack [main] Error writing OMEGA XML Footer: No element was found to write: java.lang.ArrayIndexOutOfBoundsException: -1
+2021-06-19 18:35:21,098 WARN o.s.b.f.s.DisposableBeanAdapter [main] Destroy method 'close' on bean with name 'scopedTarget.omegaXmlFileWriter' threw an exception: com.trax.europeangateway.exceptions.OmegaXmlHeaderWriterException: No element was found to write: java.lang.ArrayIndexOutOfBoundsException: -1
+2021-06-19 18:35:21,100 ERROR c.t.e.i.o.OmegaXmlFooterCallBack [main] Error writing OMEGA XML Footer: No element was found to write: java.lang.ArrayIndexOutOfBoundsException: -1
+2021-06-19 18:35:21,100 WARN o.s.b.f.s.DisposableBeanAdapter [main] Destroy method 'close' on bean with name 'scopedTarget.staxTransactionWriter' threw an exception: com.trax.europeangateway.exceptions.OmegaXmlHeaderWriterException: No element was found to write: java.lang.ArrayIndexOutOfBoundsException: -1
+2021-06-19 18:35:21,102 ERROR c.t.e.i.o.OmegaXmlFooterCallBack [main] Error writing OMEGA XML Footer: No element was found to write: java.lang.ArrayIndexOutOfBoundsException: -1
+2021-06-19 18:35:21,103 WARN o.s.b.f.s.DisposableBeanAdapter [main] Destroy method 'close' on bean with name 'scopedTarget.compositeItemWriter' threw an exception: com.trax.europeangateway.exceptions.OmegaXmlHeaderWriterException: No element was found to write: java.lang.ArrayIndexOutOfBoundsException: -1
+2021-06-19 18:35:21,106 INFO c.t.e.l.JobResultListener [main] ExtractPersonalData completed for submission account null between time 2021-06-19T18:35:19.669+0530 - 2021-06-19T18:35:21.106+0530. Job duration(seconds): 1 
+2021-06-19 18:35:21,110 INFO o.s.b.c.l.s.SimpleJobLauncher$1 [main] Job: [SimpleJob: [name=extractAndReplacePersonalDataJob]] completed with the following parameters: [{submission.account=12345, currentTime=1624107919514, file.path=D:\sameer\git\spring-batch-xml-to-xml\batchxml\src\test\resources\data\PRO_222100GH7XKDGO3GLZ60_20201231T090534024_GBXXXXXXT.XML}] and the following status: [COMPLETED] in 1s350ms
+2021-06-19 18:35:23,138 INFO o.s.i.e.EventDrivenConsumer [main] Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-06-19 18:35:23,138 INFO o.s.i.c.AbstractSubscribableChannel [main] Channel 'org.springframework.context.support.GenericApplicationContext@93081b6.errorChannel' has 0 subscriber(s).
+2021-06-19 18:35:23,138 INFO o.s.i.e.AbstractEndpoint [main] stopped bean '_org.springframework.integration.errorLogger'
+2021-06-19 18:35:23,138 INFO o.s.s.c.ExecutorConfigurationSupport [main] Shutting down ExecutorService 'taskScheduler'
+2021-06-19 18:35:23,142 INFO o.s.s.c.ExecutorConfigurationSupport [main] Shutting down ExecutorService 'europeanGatewayJobExecutor'
+2021-06-19 18:35:23,142 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-19 18:35:23,142 INFO o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl [main] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-06-19 18:35:23,145 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2021-06-19 18:35:23,147 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Shutdown completed.

@@ -1,0 +1,31 @@
+#!/bin/sh
+# Takes 1 optional argument:
+#   directory which contains the application .jar file
+#
+# If not supplied, uses default value
+#
+
+if [ -z $1 ]
+then
+        DATA_PATH="/opt/internal/europeangateway-app"
+else
+        DATA_PATH="$1"
+fi
+
+cd $DATA_PATH
+pidfile="process.pid"
+
+# customise.py script will update for replacing this value on an env by env basis
+export EUROPEAN_GATEWAY_JAVA_MAX=-Xmx6g
+
+if [ -f "$pidfile" ]
+then
+     echo "Process is already running. If this is not the case then delete " $pidfile
+else
+     nohup java $EUROPEAN_GATEWAY_JAVA_MAX -Xloggc:gc-$(date +%F_%H_%M_%S).log -Duser.timezone=GMT -XX:+HeapDumpOnOutOfMemoryError \
+     -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false \
+     -Dcom.sun.management.jmxremote.port=1198 -Dcom.sun.management.jmxremote.rmi.port=55558 \
+     -Dspring.profiles.active=default \
+     -jar europeangateway-app-exe.jar > stdout.out 2>&1 &
+     echo $!>$pidfile
+fi
