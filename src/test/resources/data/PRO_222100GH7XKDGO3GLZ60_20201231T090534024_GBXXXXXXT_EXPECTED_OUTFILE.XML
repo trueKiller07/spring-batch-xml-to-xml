@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<reportFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="" xsi:schemaLocation="http://deutsche-boerse.com/DBRegHub regulatoryHubUpload_MiFIR_001.60.xsd">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<reportFile xmlns="http://deutsche-boerse.com/DBRegHub" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://deutsche-boerse.com/DBRegHub regulatoryHubUpload_MiFIR_001.60.xsd">
   <fileInformation>
     <sender>2221003GLZ60</sender>
     <timestamp>2020-12-23T09:05:34Z</timestamp>
@@ -7,7 +7,7 @@
     <version>001.90</version>
   </fileInformation>
   <record>
-    <transaction xmlns="http://deutsche-boerse.com/DBRegHub">
+    <transaction>
       <processingDetails>
         <tradeDate>2020-05-15</tradeDate>
         <customerTransactionId>01</customerTransactionId>
@@ -69,7 +69,7 @@
         </otherDetails>
       </mifir>
     </transaction>
-    <transaction xmlns="http://deutsche-boerse.com/DBRegHub">
+    <transaction>
       <processingDetails>
         <tradeDate>2020-05-15</tradeDate>
         <customerTransactionId>02</customerTransactionId>
@@ -131,4 +131,6 @@
           <sftrIndicator>N</sftrIndicator>
         </otherDetails>
       </mifir>
-    </transaction></record></reportFile>
+    </transaction>
+  </record>
+</reportFile>
